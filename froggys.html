@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab:400,600|Muli|Oswald:400,300' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="sss/sss.min.js"></script>
+<link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+
+<script>
+jQuery(function($) {
+$('.slider').sss({
+transition : 480, 
+speed : 6800
+});
+});
+</script>
+
+
+<style>
+
+
+body{ 
+background-image: url(images/back.png), url(images/back1.png);
+background-position: right bottom, left bottom;
+background-repeat: no-repeat;
+background-attachment:fixed; }
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+	}
+.wha  {
+	padding-top:100px;
+	padding-bottom:100px;
+float: none;
+	clear: both;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<div id="container">
+	
+    
+     <header>
+    
+    <a id="logo" href="index.html"><img src="images/logosmall.png" alt="Logo" width="128" height="128" ></a>
+  
+   		 <nav id="navigation">
+         	
+           <a class="nav" href="about.html" >ABOUT</a>
+           <a class="nav"  href="portfolio.html">PORTFOLIO</a>
+           <a class="nav"  href="contact.html">CONTACT</a>
+   	 	</nav>
+    	
+ 	</header>
+    
+
+
+    
+    
+  <div id="main">
+    <div id="content">
+  <h1> Froggy's Webisite</h1>
+  
+   <div class="type"> <p>More to come</p>
+   </div>
+   <div id="preview">
+
+<a id="butter" href="froggyspreview.html" target="_blank">Website Preview</a>
+</div>
+       <div id="slideWrap">
+<div class="slider">
+
+<div><img src="images/cf.jpg" />
+<div class="title">
+<h2 class="dark">Colors and Fonts</h2>
+</div>
+</div>
+
+<div><img src="images/logod.jpg" />
+<div class="title">
+<h2 class="dark">Froggy's Logo Design</h2>
+</div>
+</div>
+
+<div><img src="images/home.jpg" />
+<div class="title">
+<h2 class="dark">Home Page</h2>
+</div>
+</div>
+
+
+<div><img src="images/menu.jpg" />
+<div class="title">
+<h2 class="dark">Menu Page</h2>
+</div>
+</div>
+
+
+<div><img src="images/wine.jpg" />
+<div class="title">
+<h2 class="dark">Wine List Page</h2>
+</div>
+</div>
+
+<div><img src="images/contact.jpg" />
+<div class="title">
+<h2 class="dark">Contact Page</h2>
+</div>
+</div>
+
+
+
+</div>
+
+   <div id="resume">
+
+<br>
+<a id="butter" href="portfolio.html" target="_blank"><img src="images/undo.png" >    portfolio</a>
+</div>
+	</div>
+</div>
+
+
+   </div>
+
+   </div>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        
+       <script> // Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+</script>
+		<script src="js/grid.js"></script>
+</body>
+</html>

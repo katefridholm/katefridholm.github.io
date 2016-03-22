@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab:400,600|Muli|Oswald:400,300' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+	<script>
+		$(document).ready(function() {
+		  $('.nav-toggle').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');					
+ 
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('show');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('hide');
+			  }
+			});
+		  });
+ 
+		});	
+		</script>
+	
+
+
+<style>
+
+body{ 
+background-image: url(images/back.png), url(images/back1.png);
+background-position: right bottom, left bottom;
+background-repeat: no-repeat;
+background-attachment:fixed; }
+
+
+#round-border {
+			border: 1px solid #eee;
+			border: 1px solid rgba(0, 0, 0, 0.05);
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+			padding: 10px;
+			margin-bottom: 5px;}
+</style>
+
+
+
+</head>
+
+<body>
+
+<div id="container">
+	
+     <header>
+    
+    <a id="logo" href="index.html"><img src="images/logosmall.png" alt="Logo" width="128" height="128" ></a>
+  
+   		 <nav id="navigation">
+         	
+           <a class="nav" href="about.html" >ABOUT</a>
+           <a class="nav"  href="portfolio.html">PORTFOLIO</a>
+           <a class="nav"  href="contact.html">CONTACT</a>
+   	 	</nav>
+    	
+ 	</header>
+    
+
+  <div id="main">
+    <div id="content">
+  <h1> About </h1>
+
+<div id="aboutMe">
+
+<h2>BIO</h2>
+
+   
+  <div id="circle-shape-example">
+  <img src="images/aboutsil.png" alt="Logo" width="190" height="224" class="curve" >
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis fringilla dolor. Donec quam eros, cursus sit amet turpis id, euismod eleifend urna. Sed facilisis velit ut metus scelerisque mattis. Nullam et odio ut diam scelerisque egestas eu eu turpis. Mauris in euismod nibh. Morbi bibendum porta ex. Morbi sapien dui, finibus a eleifend a, ullamcorper sit amet est. Cras venenatis ante eu gravida accumsan.Aenean eu pharetra orci. Proin porttitor, eros id maximus auctor, ex mauris aliquet est, eu imperdiet enim risus eget libero. 
+ </p>
+  
+  
+</div>
+  <h2>SKILLS</h2>
+  
+  <div class="all">
+  
+  
+  <div id="skills">
+  <h3 >Adobe Creative Suite:</h3>
+<div id="butt" href="#collapse1" class="nav-toggle">show</div>
+  <table id="collapse1" style="display:none">
+  <tr>
+      <td id="skill">Photoshop</td>
+      <td>
+       &#9733;&#9733;&#9733;&#9733;&#9734;
+      </td>
+  </tr>
+  <tr>
+      <td id="skill">Illustrator</td>
+      <td>
+       &#9733;&#9733;&#9733;&#9733;&#9734;
+      </td>
+  </tr>
+  <tr>
+      <td id="skill">InDesign</td>
+      <td>
+       &#9733;&#9733;&#9733;&#9734;&#9734;
+      </td>
+  </tr>
+  <tr>
+      <td id="skill">Dreamweaver</td>
+      <td>
+        &#9733;&#9733;&#9733;&#9734;&#9734;
+      </td>
+  </tr>
+  <tr>
+      <td id="skill">Animate Edge</td>
+      <td class="small">
+       &#9733;&#9734;&#9734;&#9734;&#9734;
+      </td>
+  </tr>
+  </table>
+  </div>
+  
+  <div id="skills">
+  <h3>Computer Programming:</h3>
+   <div id="butt" href="#collapse2" class="nav-toggle">show</div>
+  <table id="collapse2" style="display:none">
+
+  <tr>
+      <td id="skill">HTML5</td>
+      <td>
+        &#9733;&#9733;&#9733;&#9734;&#9734;
+      </td>
+  </tr>
+  <tr>
+      <td id="skill">CSS3</td>
+      <td>
+       &#9733;&#9733;&#9733;&#9734;&#9734;
+      </td>
+  </tr>
+  <tr>
+      <td id="skill">jQuery</td>
+      <td>
+       &#9733;&#9734;&#9734;&#9734;&#9734;
+      </td>
+  </tr>
+  <tr>
+      <td id="skill">Javascript</td>
+      <td>
+       &#9733;&#9734;&#9734;&#9734;&#9734;
+      </td>
+  </tr>
+ 
+ 
+ 
+  </table>
+  
+  </div>
+
+
+  <div id="skills">
+  <h3>Microsoft Office Suite:</h3>
+ <div id="butt" href="#collapse3" class="nav-toggle">show</div>
+  <table id="collapse3" style="display:none">
+  <tr>
+      <td id="skill">Word</td>
+      <td>
+        &#9733;&#9733;&#9733;&#9733;&#9733;
+      </td>
+  </tr>
+  <tr>
+      <td id="skill">PowerPoint</td>
+      <td>
+        &#9733;&#9733;&#9733;&#9733;&#9733;
+      </td>
+  </tr>
+  <tr>
+      <td id="skill">Excel</td>
+      <td>
+        &#9733;&#9733;&#9733;&#9734;&#9734;
+      </td>
+  </tr>
+  <tr>
+      <td id="skill">Outlook</td>
+      <td>
+       &#9733;&#9733;&#9733;&#9733;&#9734;
+      </td>
+  </tr>
+  <tr>
+      <td id="skill">Access</td>
+      <td>
+      &#9733;&#9734;&#9734;&#9734;&#9734;
+      </td>
+  </tr>
+  </table>
+  </div>
+
+	</div>
+   <div id="resume">
+<br>
+<br>
+<br>
+<a class="button" href="FridholmResume.pdf" target="_blank">RESUME PDF</a>
+</div>
+
+   </div>
+   
+   </div>
+    
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        
+       <script> // Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+</script>
+		<script src="js/grid.js"></script>
+
+    
+
+</body>
+</html>

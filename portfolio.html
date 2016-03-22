@@ -1,0 +1,191 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:600|Josefin+Slab:400,600|Muli|Oswald:400,300' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="sss/sss.min.js"></script>
+<link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+
+<script>
+jQuery(function($) {
+$('.slider').sss({
+transition : 800, 
+speed : 6500
+});
+});
+</script>
+
+
+<style>
+
+body{ 
+background-image: url(images/back.png), url(images/back1.png);
+background-position: right bottom, left bottom;
+background-repeat: no-repeat;
+background-attachment:fixed; }
+
+#stuff {
+    display: none;
+}
+
+.wha  {
+	padding-top:60px;
+float: none;
+	clear: both;
+}
+
+
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+  
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+
+<div id="container">
+	
+    <header>
+    
+    <a id="logo" href="index.html"><img src="images/logosmall.png" alt="Logo" width="128" height="128" ></a>
+  
+   		 <nav id="navigation">
+         	
+           <a class="nav" href="about.html" >ABOUT</a>
+           <a class="nav"  href="portfolio.html">PORTFOLIO</a>
+           <a class="nav"  href="contact.html">CONTACT</a>
+   	 	</nav>
+    	
+ 	</header>
+    
+
+  <div id="main">
+ 
+    <div id="content">
+    
+
+
+    <h1>Portfolio</h1>
+  
+ <div class="type">ILorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis fringilla dolor. Donec quam eros, cursus sit amet turpis id, euismod eleifend urna. Sed facilisis velit ut metus scelerisque mattis. Nullam et odio ut diam scelerisque egestas eu eu turpis. Mauris in euismod nibh. Morbi bibendum porta ex. Morbi sapien dui, finibus a eleifend a, ullamcorper sit amet est. Cras venenatis ante eu gravida accumsan.
+
+ </div>
+
+
+
+
+
+<div class="wha">
+
+
+
+<ul class="img-list">
+  <li>
+    <a href="c2r.html">
+      <img src="images/c2r.jpg" width="220" height="220"  />
+      <span class="text-content"><span>Graphic Design</span></span>
+    </a>
+  </li>
+   <li>
+    <a href="froggys.html">
+      <img src="images/mac.jpg" width="220" height="220" />
+      <span class="text-content"><span>Web Design</span></span>
+    </a>
+  </li>
+</ul>
+
+<ul class="img-list">
+   <li>
+    <a href="art.html">
+      <img src="images/art.jpg" width="220" height="220" />
+      <span class="text-content"><span>Artwork</span></span>
+    </a>
+  </li>
+  <li>
+    <a href="writing.html">
+      <img src="images/write.jpg" width="220" height="220" />
+      <span class="text-content"><span>Writing</span></span>
+    </a>
+  </li>
+</ul>
+
+
+</div>
+
+
+
+
+
+    <div id="resume">
+
+<br>
+<br>
+<br>
+<a class="button" href="images/soon.pdf" target="_blank">PORTFOLIO PDF</a>
+<br>
+</div>
+
+</div>
+
+
+</div>
+  
+  </div>
+   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        
+       <script> // Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+</script>
+		<script src="js/grid.js"></script>
+
+</body>
+</html>

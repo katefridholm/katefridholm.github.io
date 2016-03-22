@@ -1,0 +1,602 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#container
+{
+	margin: 0 auto;
+	width: auto 100%;
+	max-width: 90%;
+	min-width: 40%;
+	padding-bottom:20px;
+	
+
+}
+
+#circle-shape-example { 
+  font-family: Muli, sans-serif;  
+  padding-left: 18%;
+  padding-right:17%;
+  padding-bottom:2%;
+}
+#circle-shape-example p { 
+  line-height: 1.5;
+
+}
+#circle-shape-example .curve { 
+  width: 27%; height: auto;
+  min-width: 145px;
+  max-width:270px;
+  float: left;
+ 	margin-right:17px;
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
+
+hr {
+	border-top: double black 7px;
+	margin-top:40px;
+	width:50%;
+}
+
+h2 {
+	text-align: center;
+	 font-family: 'Oswald', sans-serif;
+  font-weight:400;
+  font-size:20px;
+ letter-spacing:1px;
+ padding-top: 10px;
+ 
+}
+h3 {
+	text-align: center;
+	 font-family: 'Josefin Slab', serif;
+  font-weight:400;
+  font-size:21px;
+margin-bottom:-.2px;
+  
+	
+}
+
+ 
+#butt{
+   font-family: 'Josefin Slab', serif;
+  font-weight:600;
+  font-size:12pt;
+  letter-spacing:1px;
+  color: black;
+  text-align:center;
+  width:50px;
+  margin:0 auto;
+  
+	text-decoration: none;
+	padding:6px;
+	background-color: #FFF;
+	padding:4px;
+	border:#EDF6EE 10px solid;
+	-o-transition:color .5s ease-out, background .5s ease-in;
+  -ms-transition:color .5s ease-out, background .5s ease-in;
+  -moz-transition:color .5s ease-out, background .5s ease-in;
+  -webkit-transition:color .5s ease-out, background .5s ease-in;
+  transition:color .5s ease-out, background .5s ease-in;
+}
+
+
+#butt:hover { 
+	color: #000;
+	text-decoration: underline; 
+	cursor: crosshair;
+	background-color: #E0F0E2;
+	border:#EDF6EE 10px solid;
+	padding:4px;
+	 font-family: 'Josefin Slab', serif;
+  font-weight:600;
+  font-size:12pt;
+  letter-spacing:1px;
+	
+	
+	cursor: crosshair;
+	text-decoration: underline;
+	}
+	
+	#butter{
+   font-family: 'Josefin Sans', sans-serif;
+  font-weight:400;
+  font-size:14pt;
+  letter-spacing:1px;
+  color: black;
+  text-align:center;
+  width:50px;
+  margin:0 auto;
+  
+	text-decoration: none;
+	padding:6px;
+	background-color: #FFF;
+	padding:6px;
+	border:#EDF6EE 15px solid;
+	-o-transition:color .5s ease-out, background .5s ease-in;
+  -ms-transition:color .5s ease-out, background .5s ease-in;
+  -moz-transition:color .5s ease-out, background .5s ease-in;
+  -webkit-transition:color .5s ease-out, background .5s ease-in;
+  transition:color .5s ease-out, background .5s ease-in;
+}
+
+
+#butter:hover { 
+	color: #000;
+	text-decoration: underline; 
+	cursor: crosshair;
+	background-color: #E0F0E2;
+	border:#EDF6EE 14px solid;
+	padding:6px;
+	 font-family: 'Josefin Sans', sans-serif;
+  font-weight:400;
+  font-size:14pt;
+  letter-spacing:1px;
+	
+	
+	cursor: crosshair;
+	text-decoration: underline;
+	}
+ 
+ 
+ p {
+	margin-top: 0;
+	margin-right: auto; 
+	margin-left: auto; 
+	margin-bottom: 0;
+	width: 50%;
+	min-width:100%;
+	padding-bottom:3%;
+	font-family: 'muli', sans-serif;
+ 	font-weight:400;
+	font-size:15px;
+	padding-top:22px;
+	}
+	
+.type{
+	margin-top: 0;
+	margin-right: 230px; 
+	margin-left: 230px; 
+	font-family: 'muli', sans-serif;
+ 	font-weight:400;
+	font-size:15.5px;
+	padding-top:35px;
+	line-height:1.5;
+}
+.type p{
+	line-height:1.4;
+	text-align: center;
+}
+
+.all {
+	margin: 0 auto;
+	max-width:900px;
+	width:100%;
+	font-family: 'muli', sans-serif;
+ 	font-weight:300;
+	font-size:16px;
+	
+	
+}
+
+#skills {
+	margin:0 auto;
+	width: 360px;
+	
+	
+	
+}
+
+#skills table {
+	width: 55%;
+	margin: 0 auto;
+	
+}
+
+
+
+td.small{
+	width:60px;
+}
+
+#resume {
+	float: none;
+	clear: both;
+	text-align: center;
+	padding-top: 28px;
+	padding-bottom:50px;
+
+}
+
+#preview {
+	float: none;
+	clear: both;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom:5px;
+
+}
+
+a.button:link {
+  font-family: 'Oswald', sans-serif;
+  font-weight:400;
+  font-size:15px;
+  letter-spacing:2px;
+  color: black;
+
+	text-decoration: none;
+	padding:12px 20px;
+	background-color: #FFF;
+	border:#000 double 4px;
+	-o-transition:color .5s ease-out, background .5s ease-in;
+  -ms-transition:color .5s ease-out, background .5s ease-in;
+  -moz-transition:color .5s ease-out, background .5s ease-in;
+  -webkit-transition:color .5s ease-out, background .5s ease-in;
+  transition:color .5s ease-out, background .5s ease-in;
+
+}
+
+a.button:hover { 
+	color: #000;
+	background-color: #E0F0E2;
+	text-decoration: underline; 
+	cursor: crosshair;
+	border:#E0F0E2 double 4px;
+	
+	}
+	
+
+a.button:visited{ 	
+  color: black;
+	text-decoration: none;
+	padding:12px 20px;
+	background-color: #FFF;
+	
+	
+}
+
+
+
+#hwrap{
+	margin-top:-14px;
+	 display: flex;
+	  padding-bottom: 6px;
+
+	  
+}
+
+
+header {
+	background: #EDF6EE;
+	min-height: 150px;
+	padding-left: 19;
+	position: fixed;
+	width: 79%;
+	left: 51%;
+	top: 0;
+	margin: 0 0 0 -40.5%;
+	z-index:999;
+	transition: top 0.2s ease-in-out;
+}
+
+.nav-up {
+  top: -150px; // same as header height. use variables in LESS/SASS
+}
+
+#logowrap {
+padding: 6px 0 0 7px;
+margin-left:15px;
+float: left;
+
+
+}
+
+#logo {
+padding: 9px;
+float: left;
+
+
+}
+#logos {
+float: center;
+}
+
+#logos {
+float: center;
+}
+
+
+
+#navbar {
+	float: right;
+	color: #d6f7ed;
+	font-size: 17px;
+	font-family: 'Oswald', sans-serif;
+	font-weight:300;
+	letter-spacing: 1px;
+	min-width:100px;
+	text-align:center;
+	margin-top:34px;
+	margin-left:-13px;
+	margin-right:-10px;
+	display:table;
+
+}
+	
+
+
+#bar {
+	float: right;
+	color: #d6f7ed;
+	font-size: 17px;
+	font-family: 'Oswald', sans-serif;
+	font-weight:300;
+	letter-spacing: 1px;
+	min-width:100px;
+	display: table;
+	text-align:center;
+	margin-right:14px;
+	margin-top: 18px;
+	
+	
+}
+
+#navigation {
+	float: right;
+	color: #d6f7ed;
+	bottom: 10px;
+	padding-top: 55px;
+	font-size: 17px;
+	font-family: 'Oswald', sans-serif;
+	font-weight:300;
+	padding-right: 19px;
+	padding-left: 100px;
+	letter-spacing: 1px;
+	min-width:100px;
+	text-align:center;
+	
+	
+}
+
+
+/* unvisited link */
+a.nav:link {
+	color: black;
+	padding-top: 9px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 9px;
+	text-decoration: none;
+	border-left:7px solid #EDF6EE;
+	border-right:7px solid #EDF6EE;
+	background-color: #FFF;
+	display: inline-block;	
+	-o-transition:color .5s ease-out, background .5s ease-in;
+  -ms-transition:color .5s ease-out, background .5s ease-in;
+  -moz-transition:color .5s ease-out, background .5s ease-in;
+  -webkit-transition:color .5s ease-out, background .5s ease-in;
+  transition:color .5s ease-out, background .5s ease-in;
+}
+
+/* visited link */
+a.nav:visited {
+	
+	
+	color: black;
+	padding-top: 9px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 9px;
+	text-decoration: none;
+	border-left:7px solid #EDF6EE;
+	border-right:7px solid #EDF6EE;
+	background-color: #FFF;
+}
+
+a.nav:active {
+	padding-top: 9px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 9px;
+	background-color: #282828;
+	cursor: crosshair;
+	text-decoration: none;
+	border-left:7px solid #EDF6EE;
+	border-right:7px solid #EDF6EE;
+}
+
+/* mouse over link */
+	
+	
+
+a.nav:hover {
+	
+	color: #000;
+	background-color: #E0F0E2;
+	padding-top: 9px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 9px;
+	cursor: crosshair;
+	text-decoration: underline;
+	border-left:7px solid #EDF6EE;
+	border-right:7px solid #EDF6EE;
+	
+
+	
+}
+
+a:link {
+	-o-transition:color .9s ease-out, background .6s ease-in;
+  -ms-transition:color .9s ease-out, background .6s ease-in;
+  -moz-transition:color .9s ease-out, background .6s ease-in;
+  -webkit-transition:color .9s ease-out, background .6s ease-in;
+  transition:color .9s ease-out, background .6s ease-in;
+	
+}
+
+a:hover {
+	cursor: crosshair;
+	
+	
+}
+
+
+
+h1 {
+	
+	text-align:center;
+	font-family: 'Josefin Slab', serif;
+	letter-spacing: 3px;
+	font-size:55px;
+	font-weight: 600;
+	padding:30px 0 27px 0;;
+	border-bottom-width: medium;
+border-bottom-style: solid;
+border-bottom-color: white;
+margin:-1px;
+}
+
+#slideWrap {
+	width:100%;
+	margin: 0 auto;
+	padding-top:40px;
+	
+	
+ 
+}
+
+#main{
+	
+  padding:163px 1px 30px 1px;
+  width: 90%;
+  margin: 0 auto;
+
+
+
+  
+}
+	
+#content
+{
+ margin: 0 auto;
+ width: 100%;
+  min-height: 860px;
+  max-height:100%;
+ background:#EDF6EE;
+
+ 
+}
+
+/*
+http://www.tipue.com/blog/center-a-div/
+
+http://moodle2.lakeforest.edu/user/index.php?id=29758
+*/
+
+
+
+.yellow {
+	color: #FFF;
+	background: #DB2;
+}
+
+
+.title {
+	width: 100%;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	
+	
+
+	
+	
+
+}
+
+
+.dark, .dark .feature {
+	color: #000;
+}
+
+.dark a {
+	color: #000;
+}
+
+.light, .dark {
+	bottom-padding: 2px;
+	font-size:18px; 
+	position: relative;
+	font-family: 'Muli', sans-serif;
+ 	font-weight:400;
+	
+}
+	
+	
+	
+	
+	
+	
+	ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  
+}
+
+ul.img-list li {
+  display: inline-block;
+  height: 220px;
+  width: 220px;
+  margin: 0 1% 1% 0;
+  position: relative;
+  border: solid #E0F0E2 3px;
+ 
+}
+
+
+
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+  cursor:crosshair;
+}
+
+
+
+
+span.text-content {
+  background: rgba(0,0,0,0.70);
+  	font-size:30px; 
+	position: relative;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight:600;
+  color: white;
+  cursor: pointer;
+  display: table;
+  left: 0;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+  height: 220px;
+  width: 220px;
+
+}
+	
+

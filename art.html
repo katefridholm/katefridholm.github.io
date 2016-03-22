@@ -1,0 +1,240 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab:400,600|Muli|Oswald:400,300' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="sss/sss.min.js"></script>
+<link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+
+<script>
+jQuery(function($) {
+$('.slider').sss({
+transition : 480, 
+speed : 6500
+});
+});
+</script>
+
+
+<style>
+
+body{ 
+background-image: url(images/back.png), url(images/back1.png);
+background-position: right bottom, left bottom;
+background-repeat: no-repeat;
+background-attachment:fixed; }
+
+#stuff {
+    display: none;
+}
+
+.wha  {
+float: none;
+	clear: both;
+}
+
+
+
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+
+<div id="container">
+	
+    <header>
+    
+    <a id="logo" href="index.html"><img src="images/logosmall.png" alt="Logo" width="128" height="128" ></a>
+  
+   		 <nav id="navigation">
+         	
+           <a class="nav" href="about.html" >ABOUT</a>
+           <a class="nav"  href="portfolio.html">PORTFOLIO</a>
+           <a class="nav"  href="contact.html">CONTACT</a>
+   	 	</nav>
+    	
+ 	</header>
+    
+
+  <div id="main">
+ 
+    <div id="content">
+    
+    <h1>Artwork</h1>
+    
+     <div class="type"> <p> I love digital art! Here is a collection of some of my creations.  </p>
+     </div>
+  
+  <div id="slideWrap">
+<div class="slider">
+
+<div><img src="images/gem.jpg" />
+<div class="title">
+<h2 class="dark">Gem—Illustrator—January 2015</h2>
+</div>
+</div>
+
+<div><img src="images/geo1.jpg" />
+<div class="title">
+<h2 class="dark">Fractured Lines—Illustrator—January 2015</h2>
+</div>
+</div>
+
+<div><img src="images/tajbw.jpg" />
+<div class="title">
+<h2 class="dark">Taj Mahal B&W—Illustrator—March 2015 </h2>
+</div>
+</div>
+
+<div><img src="images/taj.jpg" />
+<div class="title">
+<h2 class="dark">Taj Mahal Color—Illustrator—March 2015</h2>
+</div>
+</div>
+
+<div><img src="images/tajcolor.jpg" />
+<div class="title">
+<h2 class="dark">Taj Mahal Vibrant—Illustrator—March 2015</h2>
+</div>
+</div>
+
+<div><img src="images/frame.jpg" />
+<div class="title">
+<h2 class="dark">Floral Frame—illustrator—December 2014</h2>
+</div>
+</div>
+
+
+<div><img src="images/flower1.jpg" />
+<div class="title">
+<h2 class="dark">Floral collage—Photoshop—August 2014</h2>
+</div>
+</div>
+
+<div><img src="images/floralblack.jpg" />
+<div class="title">
+<h2 class="dark">Floral pattern collage—Illustrator—July 2014</h2>
+</div>
+</div>
+
+<div><img src="images/flower.jpg" />
+<div class="title">
+<h2 class="dark">Geo Square Floral Collage—Photoshop—September 2014</h2>
+</div>
+</div>
+
+
+<div><img src="images/laketvs.jpg" />
+<div class="title">
+<h2 class="dark">TVs Across Lake—Photoshop—April 2014</h2>
+</div>
+</div>
+
+
+
+<div><img src="images/floral.jpg" />
+<div class="title">
+<h2 class="dark">Geo Square Floral Collage—Photoshop—September 2014</h2>
+</div>
+</div>
+
+
+
+<div><img src="images/pm2.jpg" />
+<div class="title">
+<h2 class="dark">Mirrored Pyramid—Photoshop—Janurary 2014</h2>
+</div>
+</div>
+
+
+<div><img src="images/corpse.jpg" />
+<div class="title">
+<h2 class="dark">Exotic Corpse—Photoshop—March 2014</h2>
+</div>
+</div>
+
+<div><img src="images/pattern.png" />
+<div class="title">
+<h2 class="dark">Alphabet Pattern—Illustrator—December 2013</h2>
+</div>
+</div>
+
+<div><img src="images/what.jpg" />
+<div class="title">
+<h2 class="dark">What—Marker Drawing & Illustrator—2012</h2>
+</div>
+</div>
+
+</div>
+
+
+
+</div>
+   <div id="resume">
+
+<br>
+<a id="butter" href="portfolio.html" target="_blank"><img src="images/undo.png" >    portfolio</a>
+</div>
+
+
+
+
+</div>
+  
+  </div>
+   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        
+       <script> // Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+</script>
+		<script src="js/grid.js"></script>
+
+</body>
+</html>
